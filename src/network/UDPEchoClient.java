@@ -8,8 +8,8 @@ public class UDPEchoClient {
     private DatagramSocket socket = null;
 
     // UDP 本身不保存对端的信息, 就自己的代码中保存一下
-    private String serverIp;
-    private int serverPort;
+    private final String serverIp;
+    private final int serverPort;
 
     // 和服务器不同, 此处的构造方法是要指定访问的服务器的地址.
     public UDPEchoClient(String serverIp, int serverPort) throws SocketException {

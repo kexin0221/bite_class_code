@@ -6,6 +6,7 @@ import java.net.DatagramSocket;
 import java.net.SocketException;
 
 public class UDPEchoServer {
+
     private DatagramSocket socket = null;
 
     public UDPEchoServer(int port) throws SocketException {
